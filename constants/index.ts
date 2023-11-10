@@ -1,128 +1,137 @@
-  export const Socials = [
-    {
-      name: "Discord",
-      src: "/discord.svg",
-    },
-    {
-      name: "Facebook",
-      src: "/facebook.svg",
-    },
-    {
-      name: "Instagram",
-      src: "/instagram.svg",
-    },
-  ];
-  
-  export const Development_skill = [
-    {
-      skill_name: "Html 5",
-      Image: "/html.png",
-      width: 70,
-      height: 70,
-    },
-    {
-      skill_name: "Css",
-      Image: "/css.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Tailwind Css",
-      Image: "/tailwind.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Python",
-      Image: "/python.png",
-      width: 65,
-      height: 65,
-    },
-    {
-      skill_name: "TypeScript",
-      Image: "/ts.png",
-      width: 55,
-      height: 55,
-    },
-    {
-      skill_name: "Java",
-      Image: "/java.png",
-      width: 85,
-      height: 85,
-    },
-    {
-      skill_name: "My SQL",
-      Image: "/mysql.png",
-      width: 60,
-      height: 60,
-    },
-  ];
-  
-  export const Operation_skill = [  
-    {
-      skill_name: "Docker",
-      Image: "/docker.webp",
-      width: 72,
-      height: 72,
-    },
-    {
-      skill_name: "Kubernetes",
-      Image: "/k8s.png",
-      width: 65,
-      height: 65,
-    },
-    {
-      skill_name: "Terraform",
-      Image: "/terraform.png",
-      width: 63,
-      height: 63,
-    },
-    {
-      skill_name: "AWS",
-      Image: "/aws.png",
-      width: 65,
-      height: 65,
-    },
-    {
-      skill_name: "GCP",
-      Image: "/gcp.png",
-      width: 80,
-      height: 80,
-    },
-  ];
-  
-  export const Monitoring = [
-    {
-      skill_name: "Grafana",
-      Image: "/grafana.png",
-      width: 60,
-      height: 60,
-    },
-    {
-      skill_name: "Git",
-      Image: "/git.png",
-      width: 65,
-      height: 65,
-    },
-    {
-      skill_name: "Prometheus",
-      Image: "/prometheus.png",
-      width: 60,
-      height: 60,
-    },
-    
-  ];
-  
-  export const Other_skill = [
-    {
-      skill_name: "Bash",
-      Image: "/bash.png",
-      width: 60,
-      height: 60,
-    },
-  ];
-  
-  
-  
-  
-  
+import { RxHome, RxPerson, RxDashboard, RxClipboard } from "react-icons/rx";
+
+export const SkillData = [
+  {
+    name: "Html 5",
+    Image: "/html.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    name: "Css",
+    Image: "/css.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    name: "JavaScript",
+    Image: "/js.png",
+    width: 65,
+    height: 65,
+  },
+  {
+    name: "Tailwind Css",
+    Image: "/tailwind.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    name: "React",
+    Image: "/react.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    name: "Redux",
+    Image: "/redux.png",
+    width: 80,
+    height: 80,
+  },
+
+  {
+    name: "TypeScript",
+    Image: "/ts.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    name: "Next js 13",
+    Image: "/next.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    name: "Framer Motion",
+    Image: "/framer.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    name: "Stripe Payment",
+    Image: "/stripe.webp",
+    width: 80,
+    height: 80,
+  },
+  {
+    name: "Node js",
+    Image: "/node-js.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    name: "Mongo db",
+    Image: "/mongodb.png",
+    width: 40,
+    height: 40,
+  },
+];
+
+export const Socials = [
+  {
+    name: "Discord",
+    src: "/instagram.svg",
+  },
+  {
+    name: "Facebook",
+    src: "/facebook.svg",
+  },
+  {
+    name: "Instagram",
+    src: "/discord.svg",
+  },
+];
+export const Projects = [
+  {
+    title: "Matrix Website",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    src: "/Matrix.png",
+  },
+  {
+    title: "Matrix Website",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    src: "/Matrix.png",
+  },
+  {
+    title: "Matrix Portfolio",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    src: "/Matrix.png",
+  },
+  {
+    title: "Matrix Website",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    src: "/Matrix.png",
+  },
+];
+
+export const NavLinks = [
+  {
+    name: "/",
+    icon: RxHome,
+    link: "/",
+  },
+  {
+    name: "/my-skills",
+    icon: RxPerson,
+    link: "/my-skills",
+  },
+  {
+    name: "/my-projects",
+    icon: RxDashboard,
+    link: "/my-projects",
+  },
+  {
+    name: "/contact-me",
+    icon: RxClipboard,
+    link: "/contact-me",
+  },
+];

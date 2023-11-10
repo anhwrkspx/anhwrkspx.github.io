@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/anhwrkspx.github.io",
+    path: "/anhwrkspx.github.io",
     output:"export",
     distDir:"dist",
     images:{

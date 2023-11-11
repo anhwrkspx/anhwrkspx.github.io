@@ -32,8 +32,8 @@ export const SkillData = [
     height: 80,
   },
   {
-    name: "Redux",
-    Image: "/redux.png",
+    name: "Java",
+    Image: "/java.png",
     width: 80,
     height: 80,
   },
@@ -57,8 +57,8 @@ export const SkillData = [
     height: 80,
   },
   {
-    name: "Stripe Payment",
-    Image: "/stripe.webp",
+    name: "Python",
+    Image: "/python.webp",
     width: 80,
     height: 80,
   },
@@ -74,6 +74,31 @@ export const SkillData = [
     width: 40,
     height: 40,
   },
+  {
+    name: "Ansible",
+    Image: "/ansible.png",
+    width: 40,
+    height: 40,
+  },
+  {
+    name: "Git",
+    Image: "/git.png",
+    width: 40,
+    height: 40,
+  },
+  {
+    name: "Prometheus",
+    Image: "/prometheus.png",
+    width: 40,
+    height: 40,
+  },
+  {
+    name: "Grafana",
+    Image: "/grafana.png",
+    width: 40,
+    height: 40,
+  },
+
 ];
 
 export const Socials = [

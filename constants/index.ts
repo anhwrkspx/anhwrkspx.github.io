@@ -117,24 +117,14 @@ export const Socials = [
 ];
 export const Projects = [
   {
-    title: "Matrix Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/Matrix.png",
+    title: "Microshop Website",
+    text: "Online boutique microservices web using GO,NodeJS,C#,Python and deploy by Terraform, GKE",
+    src: "/microsoft.png",
   },
   {
-    title: "Matrix Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/Matrix.png",
-  },
-  {
-    title: "Matrix Portfolio",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/Matrix.png",
-  },
-  {
-    title: "Matrix Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/Matrix.png",
+    title: "AiSuS Website",
+    text: "AI platform that help user to generate image, video, music and real time chatting using OpenAI and NextJS. ",
+    src: "/aisus.png",
   },
 ];
 

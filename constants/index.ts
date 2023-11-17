@@ -119,7 +119,7 @@ export const Projects = [
   {
     title: "Microshop Website",
     text: "Online boutique microservices web using GO,NodeJS,C#,Python and deploy by Terraform, GKE",
-    src: "/microsoft.png",
+    src: "/microshop.png",
   },
   {
     title: "AiSuS Website",

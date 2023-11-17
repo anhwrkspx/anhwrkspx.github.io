@@ -103,16 +103,14 @@ export const SkillData = [
 
 export const Socials = [
   {
-    name: "Discord",
-    src: "/instagram.svg",
+    name: "Github",
+    src: "/github.svg",
+    link:"https://github.com/anhwrkspx/",
   },
   {
-    name: "Facebook",
-    src: "/facebook.svg",
-  },
-  {
-    name: "Instagram",
-    src: "/discord.svg",
+    name: "LinkedIn",
+    src: "/linkedin.svg",
+    link:"https://www.linkedin.com/in/anhnt-wrkn/",
   },
 ];
 export const Projects = [

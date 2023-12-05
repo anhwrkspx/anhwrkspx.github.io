@@ -19,7 +19,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-gray-200 hidden md:block">
-            {Currently unemployed}
+            Currently unemployed
           </p>
           <div className="flex-col md:flex-row hidden md:flex gap-5">
             <Link

@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-
-export default function Home() {
+import Transition from "@/components/Transition";
+const Home=() => {
   return (
     <main className="w-screen h-screen relative">
       <div
@@ -79,3 +79,6 @@ export default function Home() {
     </main>
   );
 }
+
+
+export default Transition(Home);

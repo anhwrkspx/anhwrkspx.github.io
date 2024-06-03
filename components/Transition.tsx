@@ -2,49 +2,62 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const TransitionVariants = {
-  initial: {
-    y: "100%",
-    height: "100%",
-  },
-  animate: {
-    y: "0%",
-    height: "0%",
-  },
-  exit: {
-    y: ["0%", "100%"],
-    height: ["0%", "100%"],
-  },
+const randomizeBlockDelay =(rowIndex, totalRows) => {
+  const blockDelay = Math.random() *0.5;
+  const rowDelay = (totalRows - rowIndex - 1)* 0.05;
+  return blockDelay + rowDelay;
 };
 
-const Transition = () => {
-  return (
-    <div>
-      <motion.div
-        className="fixed right-0 h-screen w-screen bottom-full z-[30] bg-[#2e2257]"
-        variants={TransitionVariants}
-        initial="initial"
-        exit="exit"
-        animate="animate"
-        transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="fixed right-0 h-screen w-screen bottom-full z-[20] bg-[#3b2d71]"
-        variants={TransitionVariants}
-        initial="initial"
-        exit="exit"
-        animate="animate"
-        transition={{ delay: 0.4, duration: 0.6, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="fixed right-0 h-screen w-screen bottom-full z-[10] bg-[#4b3792]"
-        variants={TransitionVariants}
-        initial="initial"
-        exit="exit"
-        animate="animate"
-        transition={{ delay: 0.6, duration: 0.6, ease: "easeInOut" }}
-      />
-    </div>
+const Transition = (Page) => {
+  return ()=>(
+    <>
+      <Page/>
+        <div className="blocks-container transition-in">
+          {Array.from({ length: 10}).map((_, rowIndex)=>
+          (
+          <div className="row" key={rowIndex}>
+            {Array.from({length: 11}).map((_,blockIndex)=>
+              (
+                <motion.div> 
+                  key={blockIndex}
+                  className="block"
+                  initial={{ scaleY:1 }}
+                  animate={{ scaleY:0 }}
+                  exit={{ scaleY:0 }}
+                  transition={{
+                    duration: 1,
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: randomizeBlockDelay(rowIndex,10),
+                  }}
+                </motion.div>
+              ))}
+          </div>
+          ))}
+        </div>
+
+        <div className="blocks-container transition-out">
+        {Array.from({ length: 10}).map((_, rowIndex)=>
+        (
+        <div className="row" key={rowIndex}>
+          {Array.from({length: 11}).map((_,blockIndex)=>
+            (
+              <motion.div> 
+                key={blockIndex}
+                className="block"
+                initial={{ scaleY:0 }}
+                animate={{ scaleY:0 }}
+                exit={{ scaleY:1 }}
+                transition={{
+                  duration: 1,
+                  ease: [0.22, 1, 0.36, 1],
+                  delay: randomizeBlockDelay(rowIndex,10),
+                }}
+              </motion.div>
+            ))}
+        </div>
+        ))}
+      </div>
+    </>
   );
 };
 

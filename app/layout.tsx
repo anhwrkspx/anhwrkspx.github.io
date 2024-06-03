@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Navigation from '@/components/Navigation'
+import { AnimatePresence } from "framer-motion";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,13 +17,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Navigation />
-        </body>
-    </html>
-  )
+  return (  
+    <>
+      <html lang="en">
+        <AnimatePresence mode="wait">
+            <body className={inter.className}>
+              <Navbar />
+                {children}
+                <Navigation />
+                </body>
+        </AnimatePresence>
+      </html>
+    </>
+)
 }

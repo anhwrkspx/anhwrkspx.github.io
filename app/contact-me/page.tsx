@@ -1,6 +1,6 @@
 import ContactForm from "@/components/ContactForm";
 import React from "react";
-
+import Transition from "@/components/Transition";
 const Page = () => {
   return (
     <div
@@ -19,4 +19,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Transition(Page);

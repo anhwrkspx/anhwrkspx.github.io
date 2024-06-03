@@ -6,17 +6,34 @@ body {
   overflow: hidden; 
 }
 
-.flip-card-inner {
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
+.blocks-container {
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
 }
 
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  backface-visibility: hidden;
+.row {
+  flex:1;
+  width: 100%;
+  display: flex;
 }
 
-.flip-card-back {
-  transform: rotateY(180deg);
+.block {
+  position: relative;
+  flex:1;
+  background: #667067;
+  margin: -0.25px;
+}
+
+.transition-in .block{
+  transform-origin: top;
+}
+
+.transition-out .block{
+  transform-origin: bottom;
 }
